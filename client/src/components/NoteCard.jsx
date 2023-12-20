@@ -22,7 +22,7 @@ import ModalClose from '@mui/joy/ModalClose';
 import { Stack, ModalDialog, Textarea } from '@mui/joy';
 
 const deleteNote = async (id, getNotes) => {
-    const response = await fetch(`http://localhost:5000/delete/${id}`, {
+    const response = await fetch(`${API_URL}/delete/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ const deleteNote = async (id, getNotes) => {
 const updateNote = async (id, title, description, getNotes) => {
 
 
-    let response = await fetch(`http://localhost:5000/update/${id}`, {
+    let response = await fetch(`${API_URL}/update/${id}`, {
         method: 'put',
         body: JSON.stringify({ title, description }),
         headers: {
