@@ -1,0 +1,31 @@
+.App {
+  text-align: left;
+  padding: 20px;
+}
+
+.card {
+  border: solid #d5d5d5 1px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 10px;
+  max-width: 300px;
+
+}
+
+.card:hover {
+  border: solid #444343 1px;
+
+}
+
+.name {
+  font-size: 1.2rem;
+  margin: 2px;
+  font-weight: 500;
+  color: rgb(29, 29, 29);
+}
+
+.email {
+  font-size: 0.7rem;
+  margin: 2px;
+
+}
